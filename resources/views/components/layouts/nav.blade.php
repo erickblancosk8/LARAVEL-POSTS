@@ -19,11 +19,10 @@
                     </div>
                     <div class="mx-auto">
                         <div class="flex space-x-4">
-                            <div class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('welcome') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}" id="nada">
-                            <a href="{{ route('welcome') }}">
+                            <a href="{{ route('welcome') }}"
+                               class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('welcome') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}" id="nada">
                                 Home
                             </a>
-                        </div>
                             <a href="{{ route('posts.index') }}" class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('posts.*') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
                                 Blog
                             </a>
